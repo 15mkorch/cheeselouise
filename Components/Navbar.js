@@ -6,22 +6,23 @@ export default function Navbar() {
             <div className='listElements'>
                 <ul >
                     <li>
+                        <link href="https://fonts.googleapis.com/css2?family=Crete+Round&display=swap" rel="stylesheet" />
                         <img className='logo' src="/logo.png" />
                     </li>
-                    <li><Link href="/Home" className="navbar">
-                        <a title="Home" >Home</a>
+                    <li><Link href="/index" className="navbar">
+                        <a title="Home" >HOME</a>
                     </Link></li>
                     <li><Link href="/Menu" className="navbar">
-                        <a title="Menu" >Menu</a>
+                        <a title="Menu" >MENU</a>
                     </Link></li>
                     <li><Link href="/TheExperience" className="navbar">
-                        <a title="TheExperience">The Experience</a>
+                        <a title="TheExperience">THE EXPERIENCE</a>
                     </Link></li>
                     <li><Link href="/Reviews" className="navbar">
-                        <a title="Reviews">Reviews</a>
+                        <a title="Reviews">REVIEWS</a>
                     </Link></li>
                     <li><Link href="/Contact" className="navbar">
-                        <a title="Contact">Contact</a>
+                        <a title="Contact">CONTACT</a>
                     </Link></li>
                 </ul>
             </div>
@@ -29,14 +30,18 @@ export default function Navbar() {
             <style jsx>{`
                .nav {
                    background-color: #f4a712;
-                   float: left;
+                   display: inline-block;
                    color: #f2f2f2;
                    height: 100vh;
                    width: 25%;
                }
                ul {
                 list-style-type: none;
-                padding-top: 25%;
+                margin-top: 20vh;
+                line-height: 1.6;
+                display: inline-block;
+                text-align: center;
+                
                }
                .listElements {
                    
@@ -44,17 +49,16 @@ export default function Navbar() {
                
                .nav a {
                 color: black;
-                text-align: center;
                 padding-top: 25px;
                 text-decoration: none;
                 font-size: 17px;
-                font-family: "Poppins"
+                font-family: 'Crete Round', serif;
 
             }
                .logo {
                    height: 100px;
                    width: auto;
-                   display: flex;
+                   display: inline-block;
                }
                 
                 .main-nav {
@@ -63,8 +67,7 @@ export default function Navbar() {
                 }
 
                 .nav a:hover {
-                    background-color: #9cd6d6;
-                    color: black;
+                    color: #89837E;
                     
                     
                 }
