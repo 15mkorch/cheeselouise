@@ -8,69 +8,23 @@ export default function Navbar() {
                     <li>
                         <img className='logo' src="/logo.png" />
                     </li>
-                    <li><Link href="/Home" className="navbar">
+                    <li><Link href="/Home">
                         <a title="Home" >Home</a>
                     </Link></li>
-                    <li><Link href="/Menu" className="navbar">
+                    <li><Link href="/Menu">
                         <a title="Menu" >Menu</a>
                     </Link></li>
-                    <li><Link href="/TheExperience" className="navbar">
+                    <li><Link href="/TheExperience">
                         <a title="TheExperience">The Experience</a>
                     </Link></li>
-                    <li><Link href="/Reviews" className="navbar">
+                    <li><Link href="/Reviews">
                         <a title="Reviews">Reviews</a>
                     </Link></li>
-                    <li><Link href="/Contact" className="navbar">
+                    <li><Link href="/Contact">
                         <a title="Contact">Contact</a>
                     </Link></li>
                 </ul>
             </div>
-
-            <style jsx>{`
-               .nav {
-                   background-color: #f4a712;
-                   float: left;
-                   color: #f2f2f2;
-                   height: 100vh;
-                   width: 25%;
-               }
-               ul {
-                list-style-type: none;
-                padding-top: 25%;
-               }
-               .listElements {
-                   
-               }
-               
-               .nav a {
-                color: black;
-                text-align: center;
-                padding-top: 25px;
-                text-decoration: none;
-                font-size: 17px;
-                font-family: "Poppins"
-
-            }
-               .logo {
-                   height: 100px;
-                   width: auto;
-                   display: flex;
-               }
-                
-                .main-nav {
-                    list-style: none;
-                    vertical-align: baseline;
-                }
-
-                .nav a:hover {
-                    background-color: #9cd6d6;
-                    color: black;
-                    
-                    
-                }
-        
-            }
-            `}</style>
         </div>
 
     )

@@ -1,12 +1,16 @@
+import React, { useState, useEffect } from "react";
 import Head from 'next/head';
-import { Nav, NavItem, NavLink } from 'reactstrap';
 import Navbar from '../Components/Navbar';
 
-export default function Home() {
+const Home = () => {
   return (
-    <div className="container">
+    <>
       <Head>
-        <title>Cheese Louise Gainsville Food Truck</title>
+        <title>
+          Cheese Louise Gainsville Food Truck
+        </title>
+        <meta charSet="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -16,28 +20,8 @@ export default function Home() {
 
         </div>
       </main>
-
-
-      <style jsx>{`
-        .background {
-          background-image: url(./grilledCheese.jpg);
-        }
-      `}</style>
-
-      <style jsx global>{`
-        html,
-        body {
-          padding: 0;
-          margin: 0;
-          font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-            Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
-            sans-serif;
-        }
-
-        * {
-          box-sizing: border-box;
-        }
-      `}</style>
-    </div>
+    </>
   )
 }
+
+export default Home;
