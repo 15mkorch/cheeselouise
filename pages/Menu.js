@@ -58,6 +58,9 @@ export default function Home() {
             </div>
 
           </div>
+          <div>
+            <p>Also, grab a side of a salad or fruit cup $3</p>
+          </div>
         </main>
       </div>
 
