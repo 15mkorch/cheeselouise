@@ -3,60 +3,67 @@ import Navbar from '../Components/Navbar';
 
 export default function Home() {
   return (
-    <div className="container">
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      <main>
-        <h1 className="title">
-          Menu
+    <div>
+      <Navbar />
+      <div className="container">
+        <Head>
+          <title>Create Next App</title>
+          <link rel="icon" href="/favicon.ico" />
+        </Head>
+        <main>
+          <h1 className="title">
+            Menu
         </h1>
 
-        <p className="description">
-          Add line here
+          <p className="description">
+            Add line here
         </p>
 
-        <div className="grid">
-          <div className="card">
-            <img className='photo' src="/stock.png" />
-            <h3>The Classic $4</h3>
-            <p>Cheddar cheese on sour dough</p>
-          </div>
+          <div className="grid">
+            <div className="card">
+              <img className='photo' src="/stock.png" />
+              <h3>The Classic $4</h3>
+              <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet"></link>
+              <p>Cheddar cheese on sour dough</p>
+            </div>
 
-          <div className="card">
-            <img className='photo' src="/stock.png" />
-            <h3>Southern B.T.C $8</h3>
-            <p>Thick cut bacon, fresh sliced tomato & chedadr cheese on sour dough</p>
-          </div>
+            <div className="card">
+              <img className='photo' src="/stock.png" />
+              <h3>Southern B.T.C $8</h3>
+              <p>Thick cut bacon, fresh sliced tomato & chedadr cheese on sour dough</p>
+            </div>
 
-          <div className="card">
-            <img className='photo' src="/stock.png" />
-            <h3>El Guapo $8</h3>
-            <p>Pepper jack, white american, chorizo & pickled jalapeno on sour dough</p>
-          </div>
+            <div className="card">
+              <img className='photo' src="/stock.png" />
+              <h3>El Guapo $8</h3>
+              <p>Pepper jack, white american, chorizo & pickled jalapeno on sour dough</p>
+            </div>
 
-          <div className="card">
-            <img className='photo' src="/stock.png" />
-            <h3>All the Cheese $6</h3>
-            <p>Literally all the cheese on french bread</p>
-          </div>
+            <div className="card">
+              <img className='photo' src="/stock.png" />
+              <h3>All the Cheese $6</h3>
+              <p>Literally all the cheese on french bread</p>
+            </div>
 
-          <div className="card">
-            <img className='photo' src="/stock.png" />
-            <h3>Basil Turkey Melt $8</h3>
-            <p>Thin sliced turkey breast, fresh basil, swiss, fresh sliced tomato & peso aoli on french bread</p>
-          </div>
+            <div className="card">
+              <img className='photo' src="/stock.png" />
+              <h3>Basil Turkey Melt $8</h3>
+              <p>Thin sliced turkey breast, fresh basil, swiss, fresh sliced tomato & peso aoli on french bread</p>
+            </div>
 
-          <div className="card">
-            <img className='photo' src="/stock.png" />
-            <h3>The BBQ Beast $10</h3>
-            <p>BBQ pulled pork, swet & spicy BBQ sauce & cole slaw between two classic grilled cheese sandwiches</p>
-          </div>
+            <div className="card">
+              <img className='photo' src="/stock.png" />
+              <h3>The BBQ Beast $10</h3>
+              <p>BBQ pulled pork, swet & spicy BBQ sauce & cole slaw between two classic grilled cheese sandwiches</p>
+            </div>
 
-        </div>
-      </main>
+          </div>
+          <div>
+            <p>Also, grab a side of a salad or fruit cup $3</p>
+          </div>
+        </main>
+      </div>
+
 
       <style jsx>{`
         .container {
@@ -66,6 +73,10 @@ export default function Home() {
           flex-direction: column;
           justify-content: center;
           align-items: center;
+        }
+
+        paragraph {
+          font-family: 'Open Sans', sans-serif;
         }
 
         main {
@@ -149,15 +160,14 @@ export default function Home() {
           color: inherit;
           text-decoration: none;
           border: 1px solid #eaeaea;
-          border-radius: 10px;
           transition: color 0.15s ease, border-color 0.15s ease;
         }
 
         .card:hover,
         .card:focus,
         .card:active {
-          color: #0070f3;
-          border-color: #0070f3;
+          color: #89837E;
+          border-color: #89837E;
         }
 
         .card h3 {
