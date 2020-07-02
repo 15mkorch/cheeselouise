@@ -10,19 +10,19 @@ export default function Navbar() {
                         <img className='logo' src="/logo.png" />
                     </li>
                     <li><Link href="/Home">
-                        <a title="Home" >Home</a>
+                        <a title="Home" >HOME</a>
                     </Link></li>
                     <li><Link href="/Menu">
-                        <a title="Menu" >Menu</a>
+                        <a title="Menu" >MENU</a>
                     </Link></li>
                     <li><Link href="/TheExperience">
-                        <a title="TheExperience">The Experience</a>
+                        <a title="TheExperience">THE EXPERIENCE</a>
                     </Link></li>
                     <li><Link href="/Reviews">
-                        <a title="Reviews">Reviews</a>
+                        <a title="Reviews">REVIEWS</a>
                     </Link></li>
                     <li><Link href="/Contact">
-                        <a title="Contact">Contact</a>
+                        <a title="Contact">CONTACT</a>
                     </Link></li>
                 </ul>
             </div>
@@ -30,4 +30,3 @@ export default function Navbar() {
 
     )
 }
-

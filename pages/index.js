@@ -21,7 +21,7 @@ const Home = () => {
         <link rel="stylesheet" href="../styles.css" />
       </Head>
 
-      <main>
+      <main id="index-main">
         <Navbar />
         <div className='background'>
 
