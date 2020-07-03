@@ -3,21 +3,21 @@ import Navbar from '../Components/Navbar';
 
 export default function Menu() {
   return (
-    <div>
+    <div id="menu-page">
       <Navbar />
       <div className="container">
         <Head>
-          <title>Create Next App</title>
+          <title>Cheese Louise - Our Menu</title>
           <link rel="icon" href="/favicon.ico" />
         </Head>
         <main id="menu-main">
           <h1 className="title">
             Menu
-        </h1>
+          </h1>
 
           <p className="description">
             Add line here
-        </p>
+          </p>
 
           <div className="grid">
             <div className="card">

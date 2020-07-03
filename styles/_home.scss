@@ -1,0 +1,13 @@
+//Home Styles
+#index-main{
+  display: flex;
+  flex-direction: row;
+
+  .background {
+    background-image: url(../public/grilledCheese.jpg);
+    background-size: cover;
+    background-position: 50% 75%;
+    width: 75%;
+    height: 100vh;
+  }
+}

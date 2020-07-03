@@ -65,16 +65,16 @@ const Example = (props) => {
   });
                 
   return (
-    <div>
+    <div id="reviews-page">
       <Navbar />
       <div className="container">
         <Head>
-          <title>Create Next App</title>
+          <title>Cheese Louise - Our Reviews</title>
           <link rel="icon" href="/favicon.ico" />
         </Head>
-        <main>
+        <main id="reviews-main">
           <h1 className="title">
-            Menu
+            Carousel
           </h1>
           <Carousel
             activeIndex={activeIndex}
