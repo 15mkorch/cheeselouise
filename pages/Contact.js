@@ -1,12 +1,12 @@
 import Head from 'next/head'
 import Navbar from '../Components/Navbar';
 
-export default function TheExperience() {
+export default function Contact() {
     return (
-        <div id="experience-page">
+        <div id="contact-page">
             <Head>
                 <title>
-                Cheese Louise - Experience
+                Cheese Louise - Contact Us
                 </title>
                 <meta charSet="utf-8" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
