@@ -6,7 +6,7 @@ export default function Contact() {
         <div id="contact-page">
             <Head>
                 <title>
-                Cheese Louise - Contact Us
+                    Cheese Louise - Contact Us
                 </title>
                 <meta charSet="utf-8" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -14,6 +14,7 @@ export default function Contact() {
             </Head>
             <main>
                 <Navbar />
+                <Form />
             </main>
         </div>
     )
