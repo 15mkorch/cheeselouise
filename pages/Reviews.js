@@ -2,15 +2,16 @@ import Head from 'next/head'
 import Navbar from '../Components/Navbar';
 import React, { useState } from 'react';
 import {
-    Carousel,
-    CarouselItem,
-    CarouselControl,
-    CarouselIndicators,
-    CarouselCaption
+  Carousel,
+  CarouselItem,
+  CarouselControl,
+  CarouselIndicators,
+  CarouselCaption
 } from 'reactstrap';
 
-export default function Reviews() {
-  const items = [
+
+/*export default function Reviews() {
+  let items = [
     {
       src: 'data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22800%22%20height%3D%22400%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20800%20400%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_15ba800aa1d%20text%20%7B%20fill%3A%23555%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A40pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_15ba800aa1d%22%3E%3Crect%20width%3D%22800%22%20height%3D%22400%22%20fill%3D%22%23777%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22285.921875%22%20y%3D%22218.3%22%3EFirst%20slide%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E',
       altText: 'Slide 1',
@@ -28,65 +29,50 @@ export default function Reviews() {
     }
   ];
 
-  return <Example items={items}/>;              
-}
+  const Example = (props) => {
+    const [activeIndex, setActiveIndex] = useState(0);
+    const [animating, setAnimating] = useState(false);
 
-const Example = (props) => {
-  const [activeIndex, setActiveIndex] = useState(0);
-  const [animating, setAnimating] = useState(false);
-                  
-  const next = () => {
-    if (animating) return;
-    const nextIndex = activeIndex === props.items.length - 1 ? 0 : activeIndex + 1;
-    setActiveIndex(nextIndex);
-  }
-                
-  const previous = () => {
-    if (animating) return;
-    const nextIndex = activeIndex === 0 ? props.items.length - 1 : activeIndex - 1;
-    setActiveIndex(nextIndex);
-  }
-                
-  const goToIndex = (newIndex) => {
-    if (animating) return;
-    setActiveIndex(newIndex);
-  }
-                
-  const slides = props.items.map((item) => {
+    const next = () => {
+      if (animating) return;
+      const nextIndex = activeIndex === props.items.length - 1 ? 0 : activeIndex + 1;
+      setActiveIndex(nextIndex);
+    }
+
+    const previous = () => {
+      if (animating) return;
+      const nextIndex = activeIndex === 0 ? props.items.length - 1 : activeIndex - 1;
+      setActiveIndex(nextIndex);
+    }
+
+    const goToIndex = (newIndex) => {
+      if (animating) return;
+      setActiveIndex(newIndex);
+    }
+
+    const slides = props.items.map((item) => {
+      return (
+        <CarouselItem
+          onExiting={() => setAnimating(true)}
+          onExited={() => setAnimating(false)}
+          key={item.src}>
+          <img src={item.src} alt={item.altText} />
+          <CarouselCaption captionText={item.caption} captionHeader={item.caption} />
+        </CarouselItem>
+      );
+    });
+
     return (
-      <CarouselItem
-        onExiting={() => setAnimating(true)}
-        onExited={() => setAnimating(false)}
-        key={item.src}>
-        <img src={item.src} alt={item.altText} />
-        <CarouselCaption captionText={item.caption} captionHeader={item.caption} />
-    </CarouselItem>
-    );
-  });
-                
-  return (
-    <div id="reviews-page">
-      <Navbar />
-      <div className="container">
-        <Head>
-          <title>Cheese Louise - Our Reviews</title>
-          <link rel="icon" href="/favicon.ico" />
-        </Head>
-        <main id="reviews-main">
-          <h1 className="title">
-            Carousel
-          </h1>
-          <Carousel
-            activeIndex={activeIndex}
-            next={next}
-            previous={previous}>
-            <CarouselIndicators items={props.items} activeIndex={activeIndex} onClickHandler={goToIndex} />
-            {slides}
-            <CarouselControl direction="prev" directionText="Previous" onClickHandler={previous} />
-            <CarouselControl direction="next" directionText="Next" onClickHandler={next} />
-          </Carousel>
-        </main>
-      </div>
-    </div>
-  )
-}
+
+      <Carousel
+        activeIndex={activeIndex}
+        next={next}
+        previous={previous}>
+        <CarouselIndicators items={props.items} activeIndex={activeIndex} onClickHandler={goToIndex} />
+        {slides}
+        <CarouselControl direction="prev" directionText="Previous" onClickHandler={previous} />
+        <CarouselControl direction="next" directionText="Next" onClickHandler={next} />
+      </Carousel>
+    )
+  }
+}*/

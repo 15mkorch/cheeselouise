@@ -21,7 +21,13 @@ export default function Navbar() {
                     <li><Link href="/Contact">
                         <a title="Contact">CONTACT</a>
                     </Link></li>
+                    <li>
+                        <a href="https://www.facebook.com/CheeseLouiseGA" title="followUs" target="_blank">FOLLOW US</a>
+                    </li>
                 </ul>
+                <div className="footer">
+                    <p className="note">© Cheese Louise 2020</p>
+                </div>
             </div>
         </div>
 
