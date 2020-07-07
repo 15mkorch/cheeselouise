@@ -5,7 +5,7 @@ export default function Menu() {
   return (
     <div id="menu-page">
       <Navbar />
-      <div className="container">
+      <div className="page-container">
         <Head>
           <title>Cheese Louise - Our Menu</title>
           <link rel="icon" href="/favicon.ico" />
