@@ -1,0 +1,39 @@
+#story-main{
+  display: flex;
+  flex-direction: row;
+
+    .background {
+      background-image: url(../public/images/Swazi.png);
+      background-size: cover;
+      background-position: 50% 75%;
+      width: 75%;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+
+    }
+
+    .paragraph1 {
+      width: 60%;
+      display: flex;
+      align-self: center;
+      bottom: 10%;
+      position: absolute;
+      background: white;
+      opacity: .5;
+
+      p{
+        color: black;
+        font-family: 'Raleway', sans-serif;
+        padding: 10px;
+      }
+    }
+
+    .heading {
+      display: flex;
+      position: absolute;
+      top: 7%;
+      align-self: center;
+    }
+
+  }

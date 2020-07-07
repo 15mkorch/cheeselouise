@@ -18,10 +18,10 @@ const Home = () => {
         <meta property="og:url" content="http://localhost:3000/about" />
         <meta property="og:image" content="/people.png" />
       </Head>
-
       <main id="index-main">
         <Navbar />
         <div className='background'>
+          <img className='photo1' src="/images/CheeseLouiseHomePage.png" />
 
         </div>
       </main>
