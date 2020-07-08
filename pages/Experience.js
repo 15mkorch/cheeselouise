@@ -16,16 +16,24 @@ export default function Experience() {
             <main id="experience-main">
                 <Navbar />
                 <div className='background'>
-                    <h1>test</h1>
+                    <h1>Photos</h1>
                     <div className="grid">
-                        <div className="card">
-                            <img className='photo' src="/images/Slide1.jpg" />
-                            <h3>The Classic $4</h3>
-                            <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet"></link>
-                            <p>Cheddar cheese on sour dough</p>
-                        </div>
+                        <img className='photo' src="/images/Slide1.jpg" />
+                        <img className='photo' src="/images/Slide5.jpg" />
+                        <img className='photo' src="/images/Slide2.jpg" />
+                        <img className='photo' src="/images/Slide3.jpg" />
+                        <img className='photo' src="/images/Slide4.jpg" />
+                        <img className='photo' src="/images/Slide6.jpg" />
+                    </div>
+                    <div class="slider">
+                        <ul class="slides">
+                            <li class="slide">Slide10</li>
+                            <li class="slide">Slide11</li>
+                            <li class="slide">Slide12</li>
+                        </ul>
                     </div>
                 </div>
+
             </main>
         </div>
 
