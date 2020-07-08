@@ -12,11 +12,11 @@ export default function Navbar() {
                     <li><Link href="/Menu">
                         <a title="Menu" >MENU</a>
                     </Link></li>
-                    <li><Link href="/TheExperience">
-                        <a title="TheExperience">THE EXPERIENCE</a>
+                    <li><Link href="/Experience">
+                        <a title="Experience">THE EXPERIENCE</a>
                     </Link></li>
-                    <li><Link href="/Reviews">
-                        <a title="Reviews">REVIEWS</a>
+                    <li><Link href="/Story">
+                        <a title="Story">STORY</a>
                     </Link></li>
                     <li><Link href="/Contact">
                         <a title="Contact">CONTACT</a>
