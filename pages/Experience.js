@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Navbar from '../Components/Navbar';
+import Carousel from '../Components/Carousel';
 //import Carousel1 from '../Components/Carousel';
 
 export default function Experience() {
@@ -25,13 +26,7 @@ export default function Experience() {
                         <img className='photo' src="/images/Slide4.jpg" />
                         <img className='photo' src="/images/Slide6.jpg" />
                     </div>
-                    <div class="slider">
-                        <ul class="slides">
-                            <li class="slide">Slide10</li>
-                            <li class="slide">Slide11</li>
-                            <li class="slide">Slide12</li>
-                        </ul>
-                    </div>
+                    <Carousel />
                 </div>
 
             </main>
