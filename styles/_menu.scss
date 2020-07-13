@@ -5,9 +5,9 @@
   height: 100vh;
   overflow: hidden;
 
-  .container{
-    width: 75%;
+  .page-container{
     height: 100vh;
+    width: 75%;
     overflow-y: auto;
   }
   
@@ -43,7 +43,7 @@
       justify-content: center;
       flex-wrap: wrap;
   
-      max-width: 800px;
+      max-width: 900px;
       margin-top: 3rem;
   
       .card {
