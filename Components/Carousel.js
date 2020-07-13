@@ -1,6 +1,6 @@
 export default function Carousel() {
 
-    let sliderIndex = 1;
+    let slideIndex = 1;
     showSlides(slideIndex);
 
     //Thumbnail image controls

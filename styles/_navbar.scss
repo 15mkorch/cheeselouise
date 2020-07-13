@@ -5,6 +5,7 @@
   color: #f2f2f2;
   height: 100vh;
   width: 25%;
+  position: relative;
 
   .logo {
     height: auto;
@@ -12,18 +13,34 @@
     width: calc(100% - 64px);
     display: inline-block;
   }
+
+  #hamburger{
+    display: none;
+  }
+
   .footer {
     display: inline-block;
     margin-bottom: 0;
     position: absolute;
-    bottom: 0px;
+    bottom: 16px;
     left: 0px;
-    width: 23%;
+    width: 100%;
     text-align: center;
     font-family: 'Crete Round', serif;
   }
 
-  ul {
+  #footer-full{
+    display: inline-block;
+    margin-bottom: 0;
+    position: absolute;
+    bottom: 16px;
+    left: 0px;
+    width: 100%;
+    font-family: 'Crete Round', serif;
+    text-align: center;
+  }
+
+  #vertical-options, #vertical-options-full {
     margin-top: 10vh;
     list-style-type: none;
     line-height: 1.6;
@@ -40,8 +57,69 @@
   
       &:hover {
         color: #89837E;
-       
       }
+    }
+  }
+
+  #vertical-options-full {
+    line-height: 2.0;
+    a {
+      font-size: 24px;
+    }
+  }
+
+  #panel {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    background-color: black;
+    z-index: 2;
+    transition-duration: 250ms;
+    transform: translateX(100vw);
+
+    &.open{
+      transform: translateX(0vw);
+    }
+
+    #top-row{
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+    }
+  }
+}
+
+@media (max-width: 800px) {  
+  #navbar{
+    height: 80px;
+    width: 100%;
+
+    #container{
+      display: flex;
+      justify-content: space-between;
+    }
+
+    #hamburger{
+      display: initial;
+      font-size: 40px;
+      margin: 20px;
+      cursor: pointer;
+    }
+
+    .logo {
+      height: 60px;
+      margin: 10px;
+      width: 60px;
+      display: inline-block;
+    }
+
+    .footer{
+      display: none;
+    }
+
+    #vertical-options{
+      display: none;
     }
   }
 }

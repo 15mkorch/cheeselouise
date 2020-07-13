@@ -1,15 +1,4 @@
 #story-page{
-  display: flex;
-  flex-direction: row;
-  height: 100vh;
-  overflow: hidden;
-
-  .page-container{
-    height: 100vh;
-    overflow-y: auto;
-    width: 75%;
-  }
-
   #story-main {
     flex: 1;
     display: flex;

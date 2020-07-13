@@ -4,7 +4,6 @@ import Navbar from '../Components/Navbar';
 export default function Story() {
   return (
     <div id="story-page">
-      <Navbar />
       <div className="page-container">
         <Head>
           <title>Cheese Louise - Our Menu</title>

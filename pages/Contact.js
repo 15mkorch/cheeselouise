@@ -10,7 +10,6 @@ export default function Contact() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <main id="contact-main">
-                <Navbar />
                 <div className='background'>
                     <h1>Contact Us</h1>
                     <h2> Book us for your next event, company celebration, or neighborhood block party!</h2>
@@ -18,9 +17,6 @@ export default function Contact() {
                         <Form1 />
                     </div>
                 </div>
-
-
-
             </main>
         </div>
     )
