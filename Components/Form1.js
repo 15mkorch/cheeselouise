@@ -42,7 +42,7 @@ export default function Form1() {
                         placeholder="First Name"
                     />
                 </FormGroup>
-                <br />
+
                 <FormGroup>
                     <Label for="lastName">Last Name</Label>
                     <Input
@@ -53,7 +53,6 @@ export default function Form1() {
                         placeholder="Last Name"
                     />
                 </FormGroup>
-                <br />
 
                 <FormGroup>
                     <Label for="phoneNumber">Phone Number</Label>
@@ -65,7 +64,6 @@ export default function Form1() {
                         placeholder="Phone Number"
                     />
                 </FormGroup>
-                <br />
 
                 <FormGroup>
                     <Label for="email"> E-mail</Label>
@@ -77,7 +75,6 @@ export default function Form1() {
                         placeholder="E-mail"
                     />
                 </FormGroup>
-                <br />
 
                 <FormGroup>
                     <Label for="zipCode">ZipCode</Label>
@@ -89,7 +86,6 @@ export default function Form1() {
                         placeholder="Zip Code"
                     />
                 </FormGroup>
-                <br />
 
                 <FormGroup>
                     <Label for="eventType">Event Type</Label>
@@ -101,7 +97,6 @@ export default function Form1() {
                         placeholder="What type of Event?"
                     />
                 </FormGroup>
-                <br />
 
                 <FormGroup>
                     <Label for="proposedDates">Proposed Dates</Label>
@@ -113,13 +108,10 @@ export default function Form1() {
                         placeholder="What dates do you have in mind?"
                     />
                 </FormGroup>
-                <br />
-
 
                 <Button onClick={(e) => submitForm(e)}>Submit</Button>
 
             </form>
-            <hr />
         </div>
 
     )

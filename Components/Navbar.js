@@ -35,19 +35,19 @@ export default function Navbar() {
                     <i id="hamburger" className="material-icons" onClick={() => {document.getElementById('panel').classList.remove('open')}}>close</i>
                 </div>
                 <ul id="vertical-options-full">
-                    <li><Link href="/">
+                    <li onClick={() => {document.getElementById('panel').classList.remove('open')}}><Link href="/">
                         <a title="Home" >HOME</a>
                     </Link></li>
-                    <li><Link href="/Menu">
+                    <li onClick={() => {document.getElementById('panel').classList.remove('open')}}><Link href="/Menu">
                         <a title="Menu" >MENU</a>
                     </Link></li>
-                    <li><Link href="/Experience">
+                    <li onClick={() => {document.getElementById('panel').classList.remove('open')}}><Link href="/Experience">
                         <a title="Experience">THE EXPERIENCE</a>
                     </Link></li>
-                    <li><Link href="/Story">
+                    <li onClick={() => {document.getElementById('panel').classList.remove('open')}}><Link href="/Story">
                         <a title="Story">STORY</a>
                     </Link></li>
-                    <li><Link href="/Contact">
+                    <li onClick={() => {document.getElementById('panel').classList.remove('open')}}><Link href="/Contact">
                         <a title="Contact">CONTACT</a>
                     </Link></li>
                     <li>

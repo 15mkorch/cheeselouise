@@ -1,21 +1,24 @@
 #contact-main{
   display: flex;
-  flex-direction: row;
-  .background {
+  flex-direction: column;
+  align-items: center;
+  padding: 7%;
+
+  h1{
+    font-size: 3.5rem;
+    max-width: 800px;
+  }
+
+  h4{
+    max-width: 800px;
+  }
+
+  #form {
     background-size: cover;
-    background-position: 50% 75%;
-    width: 75%;
     display: flex;
     flex-direction: column;
-    padding: 10px;
-
-    h1 {
-      font-family: 'Crete Round', serif;
-    }
-
-    h2{
-      font-family: 'Open Sans', sans-serif;
-    }
-
+    max-width: 800px;
+    width: 100%;
+    margin-top: 7%;
   }
 }
