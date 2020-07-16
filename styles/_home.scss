@@ -18,10 +18,13 @@
       left: 0;
       position: absolute;
       z-index: -1;
-      background-image: url(../public/grilledCheese2.jpg);
-      background-size: cover;
-      background-position: center;
       transform: scale(1.5) translateY(10%);
+      display: flex;
+      justify-content: center;
+      
+      img{
+        height: 100%;
+      }
     }
 
     #gradient{

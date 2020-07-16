@@ -1,6 +1,6 @@
 #carousel{
     width: 80%; 
-    //height: 200px;
+    height: calc(40vh - 5vw);
     overflow: hidden;
     border-radius: 5px;
     position: relative;
@@ -8,7 +8,7 @@
 
     .item{
       background: #333;
-      //height: 200px;
+      height: calc(40vh - 5vw);
       padding-top: 32px;
       padding-bottom: 32px;
       width: 100%;
@@ -23,5 +23,4 @@
         text-align: center;
       }
     }
-
 }

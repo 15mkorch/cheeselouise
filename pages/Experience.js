@@ -1,8 +1,18 @@
 import Head from 'next/head'
 import Navbar from '../Components/Navbar';
 import CarouselItem from '../Components/Carousel';
+import {useEffect, useState} from 'react';
+import axios from 'axios';
 
 export default function Experience() {
+    const [photos, setPhotos] = useState([]);
+  
+    useEffect(() => {
+        axios.get('http://localhost:1337/photos').then((res) => {
+            setPhotos(res.data.Photos);
+        }); 
+    }, []);
+
     return (
         <div id="experience-page">
             <Head>
@@ -16,12 +26,7 @@ export default function Experience() {
             <main id="experience-main">
                 <h1 id="photos-title">Photos</h1>
                 <div className="grid">
-                    <img className='photo' src="/images/Slide1.jpg" />
-                    <img className='photo' src="/images/Slide5.jpg" />
-                    <img className='photo' src="/images/Slide2.jpg" />
-                    <img className='photo' src="/images/Slide3.jpg" />
-                    <img className='photo' src="/images/Slide4.jpg" />
-                    <img className='photo' src="/images/Slide6.jpg" />
+                    {photos.map((item) => <img className='photo' src={"http://localhost:1337"+item.url} />)}
                 </div>
                 <div id="divider"></div>
                 <h1 id="reviews-title">Our Reviews</h1>

@@ -1,0 +1,24 @@
+{
+  "kind": "singleType",
+  "collectionName": "main_backgrounds",
+  "info": {
+    "name": "Main Background"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "Image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}

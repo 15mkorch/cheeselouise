@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/main-background",
+      "handler": "main-background.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/main-background",
+      "handler": "main-background.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/main-background",
+      "handler": "main-background.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

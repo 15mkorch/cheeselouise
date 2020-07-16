@@ -6,62 +6,45 @@ import axios from 'axios'
 export default function Form1() {
 
     let [form, setForm] = useState({
-        firstName: "",
-        lastName: "",
-        phoneNumber: "",
+        f_name: "",
+        l_name: "",
+        number: "",
         email: "",
-        zipCode: "",
-        eventType: "",
-        proposedDates: ""
+        message: "",
     })
 
     const handleChange = (event) => {
-        const { name, value, type, checked } = event.target;
-        if (type == 'checkbox') {
-            setForm({ ...form, [name]: checked })
-        } else {
-            setForm({ ...form, [name]: value })
-        }
+        const { name, value } = event.target;
+        setForm({ ...form, [name]: value })
     }
 
     const submitForm = (e) => {
         e.preventDefault();
-        axios.post('http://localhost:5000/api/forms', form)
+        axios.post('/api/send-email', form)
     }
 
     return (
         <div id='form1' className='form3'>
             <form className='form2'>
                 <FormGroup>
-                    <Label for="firstName">First Name</Label>
+                    <Label for="f_name">First Name</Label>
                     <Input
                         className="input"
-                        name="firstName"
-                        value={form.firstName}
+                        name="f_name"
+                        value={form.f_name}
                         onChange={(e) => handleChange(e)}
                         placeholder="First Name"
                     />
                 </FormGroup>
 
                 <FormGroup>
-                    <Label for="lastName">Last Name</Label>
+                    <Label for="l_name">Last Name</Label>
                     <Input
                         className="input"
-                        name="lastName"
-                        value={form.lastName}
+                        name="l_name"
+                        value={form.l_name}
                         onChange={(e) => handleChange(e)}
                         placeholder="Last Name"
-                    />
-                </FormGroup>
-
-                <FormGroup>
-                    <Label for="phoneNumber">Phone Number</Label>
-                    <Input
-                        className="input"
-                        name="phoneNumber"
-                        value={form.phoneNumber}
-                        onChange={(e) => handleChange(e)}
-                        placeholder="Phone Number"
                     />
                 </FormGroup>
 
@@ -77,35 +60,24 @@ export default function Form1() {
                 </FormGroup>
 
                 <FormGroup>
-                    <Label for="zipCode">ZipCode</Label>
+                    <Label for="number">Phone Number</Label>
                     <Input
                         className="input"
-                        name="zipCode"
-                        value={form.zipCode}
+                        name="number"
+                        value={form.number}
                         onChange={(e) => handleChange(e)}
-                        placeholder="Zip Code"
+                        placeholder="Phone Number"
                     />
                 </FormGroup>
 
                 <FormGroup>
-                    <Label for="eventType">Event Type</Label>
+                    <Label for="message">Question/Message</Label>
                     <Input
                         className="input"
-                        name="eventType"
-                        value={form.eventType}
+                        name="message"
+                        value={form.message}
                         onChange={(e) => handleChange(e)}
-                        placeholder="What type of Event?"
-                    />
-                </FormGroup>
-
-                <FormGroup>
-                    <Label for="proposedDates">Proposed Dates</Label>
-                    <Input
-                        className="input"
-                        name="proposedDates"
-                        value={form.proposedDates}
-                        onChange={(e) => handleChange(e)}
-                        placeholder="What dates do you have in mind?"
+                        placeholder="Message"
                     />
                 </FormGroup>
 

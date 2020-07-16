@@ -1,8 +1,17 @@
 import React, { useState, useEffect } from "react";
 import Head from 'next/head';
-import Navbar from '../Components/Navbar';
+import axios from 'axios';
 
 const Home = () => {
+
+  const [background, setBackground] = useState("");
+  
+  useEffect(() => {
+    axios.get('http://localhost:1337/main-background').then((res) => {
+      setBackground("http://localhost:1337"+res.data.Image.url);
+    });
+  }, []);
+  
   return (
     <div id="index-page">
       <Head>
@@ -22,7 +31,9 @@ const Home = () => {
         <div className="heading"> 
           <img src='/images/CheeseLouiseHomePage.png'/>
         </div>
-        <div id="background"></div>
+        <div id="background">
+          <img src={background}/>
+        </div>
         <div id="gradient"></div>
       </main>
     </div>

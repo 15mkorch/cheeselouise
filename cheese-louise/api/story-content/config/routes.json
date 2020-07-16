@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/story-content",
+      "handler": "story-content.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/story-content",
+      "handler": "story-content.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/story-content",
+      "handler": "story-content.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
